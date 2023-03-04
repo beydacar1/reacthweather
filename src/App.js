@@ -1,6 +1,7 @@
 //hava durumu project
 import React, { useState, useEffect } from 'react';
 import { usePosition } from 'use-position';
+import { WiDayCloudy } from 'react-icons/wi';
 import axios from 'axios';
 import './css/index.css';
 import './css/weather.css';
@@ -28,7 +29,7 @@ function App() {
   }
   return (
     <div className="content">
-      <h1>Weather</h1>
+      <h1>Weather <WiDayCloudy/> </h1>
       <div className='weather'>
         <div className='weather-location'>
           <span>lat : {weather.coord.lat} </span>
